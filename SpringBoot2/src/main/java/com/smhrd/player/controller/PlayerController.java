@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.smhrd.player.service.PlayerService;
 
 @RestController // 리액트 서버로 데이터만 응답
-@CrossOrigin("13.125.253.10:3001/") // aws : 서버주소 변경
+@CrossOrigin(origins = "http://13.125.253.10:3001/") // aws : 서버주소 변경
 public class PlayerController {
 	
 	@Autowired
